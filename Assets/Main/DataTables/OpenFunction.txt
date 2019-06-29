@@ -1,0 +1,36 @@
+#	功能表（仅主界面）														
+#	Id		IsDefaultOpen	ParentId	FunctionPath	IconId	Name	Desc	OpenType	Contidtion	FunctionGroup	GroupIndex	LimitTime	IsSubpageSign	IsPlayAnimation
+#	int		bool	int	String	int	string	string	int	int	int	int	int	bool	bool
+#	编号	策划备注	默认开放（1开放-1不开放）	关联主功能号	功能按钮（GameObject）	功能图标ID	功能名称	功能描述	(1等级2任务ID)	条件（等级/任务ID）	板块（1上面，2右边，3右下）	组（从1开始）	限时（针对某些限时功能）	子页签是否显示	是否播放动画（1播放 -1不播放）
+	10001	排行榜	TRUE	-1	Operation List Bg/Animation Bg/Btn Top List Grid/Rank List Offset	10001	LOBBY_NAME_1	LOBBY_DESC_1	-1	-1	1	1	-1	FALSE	FALSE
+	10002	福利中心	FALSE	-1	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10002	LOBBY_NAME_2	LOBBY_DESC_2	2	10049	1	2	-1	FALSE	TRUE
+	10003	抽奖	FALSE	-1	Operation List Bg/Animation Bg/Btn Top List Grid/Chance Offset	10003	LOBBY_NAME_3	LOBBY_DESC_3	1	15	1	4	-1	FALSE	TRUE
+	10004	商店	TRUE	-1	Operation List Bg/Animation Bg/Btn Top List Grid/Shop Offset	10004	LOBBY_NAME_4	LOBBY_DESC_4	-1	-1	1	5	-1	FALSE	FALSE
+	10005	首冲礼包	TRUE	-1	Operation List Bg/Animation Bg/Btn Top List Grid/First Charge Offset	10005	LOBBY_NAME_5	LOBBY_DESC_5	-1	-1	1	6	-1	FALSE	FALSE
+	10006	每日特惠	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10006	LOBBY_NAME_6	LOBBY_DESC_6	2	10049	-1	1	-1	FALSE	FALSE
+	10007	在线奖励	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10007	LOBBY_NAME_7	LOBBY_DESC_7	-1	-1	-1	2	-1	FALSE	FALSE
+	10008	七日登陆	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10008	LOBBY_NAME_8	LOBBY_DESC_8	-1	-1	-1	3	-1	FALSE	FALSE
+	10009	签到	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10009	LOBBY_NAME_9	LOBBY_DESC_9	2	10036	-1	7	-1	FALSE	TRUE
+	10010	月卡	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10010	LOBBY_NAME_10	LOBBY_DESC_10	2	10049	-1	4	-1	FALSE	FALSE
+	10011	成长基金	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10011	LOBBY_NAME_11	LOBBY_DESC_11	-1	-1	-1	5	-1	FALSE	FALSE
+	10012	激活码兑换	FALSE	10002	Operation List Bg/Animation Bg/Btn Top List Grid/Operation Offset	10012	LOBBY_NAME_12	LOBBY_DESC_12	-1	-1	-1	6	-1	FALSE	FALSE
+	20001	活动	FALSE	-1	Btn Right List Grid/Activity Button	20001	LOBBY_NAME_13	LOBBY_DESC_13	2	10019	2	3	-1	FALSE	TRUE
+	20002	竞技	FALSE	-1	Btn Right List Grid/Pvp Button	20002	LOBBY_NAME_14	LOBBY_DESC_14	2	10053	2	2	-1	FALSE	TRUE
+	20003	探险	FALSE	-1	Btn Right List Grid/Instance Button	20003	LOBBY_NAME_15	LOBBY_DESC_15	2	10002	2	1	-1	FALSE	TRUE
+	20004	乱斗	FALSE	20001	Btn Right List Grid/Activity Button	20004	LOBBY_NAME_16	LOBBY_DESC_16	2	10052	-1	6	-1	FALSE	FALSE
+	20005	排位	FALSE	20001	Btn Right List Grid/Activity Button	20005	LOBBY_NAME_17	LOBBY_DESC_17	2	10081	-1	3	-1	FALSE	FALSE
+	20006	金币副本	FALSE	20001	Btn Right List Grid/Activity Button	20006	LOBBY_NAME_18	LOBBY_DESC_18	1	10	-1	4	-1	FALSE	FALSE
+	20007	经验副本	FALSE	20001	Btn Right List Grid/Activity Button	20007	LOBBY_NAME_19	LOBBY_DESC_19	1	20	-1	5	-1	FALSE	FALSE
+	20008	BOSS副本	TRUE	20001	Btn Right List Grid/Activity Button	20008	LOBBY_NAME_31	LOBBY_DESC_31	2	10019	-1	1	-1	FALSE	FALSE
+	20009	风暴之塔	TRUE	20001	Btn Right List Grid/Activity Button	20009	LOBBY_NAME_32	LOBBY_DESC_32	2	10033	-1	2	-1	FALSE	FALSE
+	30001	英雄	TRUE	-1	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	30001	LOBBY_NAME_20	LOBBY_DESC_20	-1	-1	3	1	-1	FALSE	FALSE
+	30002	任务	TRUE	-1	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Daily Quest Button	30002	LOBBY_NAME_21	LOBBY_DESC_21	-1	-1	3	3	-1	FALSE	FALSE
+	30003	星图	FALSE	-1	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Meridian Button	30003	LOBBY_NAME_22	LOBBY_DESC_22	2	10026	3	4	-1	FALSE	TRUE
+	30004	阵容	TRUE	-1	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Team Button	30004	LOBBY_NAME_23	LOBBY_DESC_23	-1	-1	3	2	-1	FALSE	FALSE
+	30005	好友	TRUE	-1	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Friends Button	30005	LOBBY_NAME_24	LOBBY_DESC_24	-1	-1	3	5	-1	FALSE	TRUE
+	30006	英雄升星	TRUE	30001	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	30006	LOBBY_NAME_25	LOBBY_DESC_25	-1	-1	-1	1	-1	FALSE	FALSE
+	30007	英雄进阶	FALSE	30001	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	30007	LOBBY_NAME_26	LOBBY_DESC_26	2	10016	-1	2	-1	FALSE	TRUE
+	30008	英雄装备	FALSE	30001	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	30008	LOBBY_NAME_27	LOBBY_DESC_27	2	10010	-1	3	-1	FALSE	TRUE
+	30009	英雄技能	TRUE	30001	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	30009	LOBBY_NAME_28	LOBBY_DESC_28	-1	-1	-1	4	-1	FALSE	FALSE
+	30010	成长任务	TRUE	30002	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Daily Quest Button	30010	LOBBY_NAME_29	LOBBY_DESC_29	-1	-1	-1	1	-1	FALSE	FALSE
+	30012	每日任务	FALSE	30002	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Daily Quest Button	30012	LOBBY_NAME_30	LOBBY_DESC_30	2	10088	-1	2	-1	FALSE	TRUE

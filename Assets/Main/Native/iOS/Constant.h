@@ -1,0 +1,10 @@
+#ifndef Unity_iPhone_Constants_h
+#define Unity_iPhone_Constants_h
+
+FOUNDATION_EXPORT const char * NATIVE_CALLBACK_GO;
+FOUNDATION_EXPORT const char * LOW_MEMORY_MSG;
+FOUNDATION_EXPORT const char * NATIVE_DIALOG_CLOSE_MSG;
+FOUNDATION_EXPORT const char * ASK_TO_CALL_PREREGISTERED_CALLBACK;
+FOUNDATION_EXPORT const char * TRY_TO_RESUME_GAME;
+
+#endif

@@ -1,0 +1,95 @@
+﻿using System.Collections.Generic;
+
+namespace Genesis.GameClient
+{
+    public class EntityAnimationTimeLineActionData : TimeLineActionData
+    {
+        public override string ActionType
+        {
+            get
+            {
+                return "EntityAnimationTimeLineAction";
+            }
+        }
+
+        private string m_AnimationName = string.Empty;
+
+        public string AnimationName
+        {
+            get
+            {
+                return m_AnimationName;
+            }
+        }
+
+        private float? m_Speed;
+
+        public float? Speed
+        {
+            get
+            {
+                return m_Speed;
+            }
+        }
+
+        private float? m_Time;
+
+        public float? Time
+        {
+            get
+            {
+                return m_Time;
+            }
+        }
+
+        private float? m_FadeLength;
+
+        public float? FadeLength
+        {
+            get
+            {
+                return m_FadeLength;
+            }
+        }
+
+        public void Init(float? startTime, float? duration, string animationName, float? speed, float? time, float? fadeLength)
+        {
+            m_StartTime = startTime ?? 0f;
+            m_Duration = duration ?? 0f;
+            m_AnimationName = animationName;
+            m_Speed = speed;
+            m_Time = time;
+            m_FadeLength = fadeLength;
+        }
+
+        public override void ParseData(string[] timeLineActionArgs)
+        {
+            Init(
+                ConverterEx.ParseFloat(timeLineActionArgs[1]),
+                ConverterEx.ParseFloat(timeLineActionArgs[2]),
+                timeLineActionArgs[3],
+                ConverterEx.ParseFloat(timeLineActionArgs[8]),
+                ConverterEx.ParseFloat(timeLineActionArgs[9]),
+                ConverterEx.ParseFloat(timeLineActionArgs[12]));
+        }
+
+        public override string[] SerializeData()
+        {
+            List<string> ret = new List<string>();
+            ret.Add(ActionType);
+            ret.Add(ConverterEx.GetString(StartTime));
+            ret.Add(ConverterEx.GetString(Duration));
+            ret.Add(AnimationName);
+            ret.Add("null");
+            ret.Add("null");
+            ret.Add("null");
+            ret.Add("null");
+            ret.Add(ConverterEx.GetString(Speed));
+            ret.Add(ConverterEx.GetString(Time));
+            ret.Add("null");
+            ret.Add("null");
+            ret.Add(ConverterEx.GetString(FadeLength));
+            return ret.ToArray();
+        }
+    }
+}

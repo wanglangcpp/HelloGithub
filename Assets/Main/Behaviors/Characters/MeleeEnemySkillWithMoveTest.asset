@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: MeleeEnemySkillWithMoveTest
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: 
+    behaviorDescription: 
+    mTaskData:
+      types:
+      - BehaviorDesigner.Runtime.Tasks.EntryTask
+      - Genesis.GameClient.Behavior.UntilDead
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - Genesis.GameClient.Behavior.AddTargetPositions
+      - Genesis.GameClient.Behavior.PerformSkill
+      - Genesis.GameClient.Behavior.ClearTargetPositions
+      - BehaviorDesigner.Runtime.Tasks.Wait
+      parentIndex: ffffffff000000000100000002000000020000000200000002000000
+      startIndex: 000000000a000000140000001f0000002d0000003c00000046000000
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName:
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Vector2[]m_Positions
+        - Vector2Vector2[]m_Positions0
+        - Vector2Vector2[]m_Positions1
+        - Vector2Vector2[]m_Positions2
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - SharedIntm_SkillId
+        - StringSharedIntm_SkillIdType
+        - StringSharedIntm_SkillIdName
+        - Int32SharedIntm_SkillIdmValue
+        - Booleanm_FaceTarget
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - SharedFloatwaitTime
+        - StringSharedFloatwaitTimeType
+        - StringSharedFloatwaitTimeName
+        - SingleSharedFloatwaitTimemValue
+        - SharedBoolrandomWait
+        - StringSharedBoolrandomWaitType
+        - StringSharedBoolrandomWaitName
+        - BooleanSharedBoolrandomWaitmValue
+        - SharedFloatrandomWaitMin
+        - StringSharedFloatrandomWaitMinType
+        - StringSharedFloatrandomWaitMinName
+        - SingleSharedFloatrandomWaitMinmValue
+        - SharedFloatrandomWaitMax
+        - StringSharedFloatrandomWaitMaxType
+        - StringSharedFloatrandomWaitMaxName
+        - SingleSharedFloatrandomWaitMaxmValue
+        startIndex: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000340000003500000036000000370000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f0000004f000000500000005100000052000000520000005300000054000000550000005500000056000000570000005800000058000000590000005a000000
+        dataPosition: 0000000004000000090000000a0000001200000012000000130000001400000015000000190000001d000000210000002b0000002c00000034000000460000004700000048000000490000004d00000051000000550000005d0000005e00000066000000660000006700000068000000690000006d0000007100000075000000790000008d0000008e00000096000000960000009700000098000000990000009d000000a1000000a5000000ad000000b5000000bd000000c1000000ce000000cf000000d7000000d7000000d8000000d9000000da000000de000000e2000000040100000401000008010000090100000d01000023010000240100002c0100002c0100002d0100002e0100002f01000033010000370100003b0100003f0100004001000048010000540100005501000056010000570100005b0100005f010000830100008301000087010000aa010000aa010000ab010000cf010000cf010000d3010000f7010000f7010000
+        unityObjects: []
+        byteData: 00000000456e747279010000000000000000000000000000000000000000000001556e74696c204465616401009968409247ee42e79bb4e588b0e887aae5b7b1e6adbbe4baa100000000000000000000000000000253657175656e636501000000000000f042000000000000000000000000000000000000034164642054617267657420506f736974696f6e7301000096c30000f04200000000000000000000000000000300002041000000410000704100002041000040410000804000000004506572666f726d20536b696c6c01000070c20000f04200000000000000000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74000003e90000000005436c6561722054617267657420506f736974696f6e730100003e430000f04200000000000000000000000000000657616974010000aa430000f042e4bc91e681af302e35e7a79200000000000000000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61743f0000004265686176696f7244657369676e65722e52756e74696d652e536861726564426f6f6c004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617400000000
+        byteDataArray: 

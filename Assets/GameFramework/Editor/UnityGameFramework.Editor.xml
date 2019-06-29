@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnityGameFramework.Editor</name>
+    </assembly>
+    <members>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundleAnalyzer">
+            <summary>
+            资源包分析器。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundleBuilder">
+            <summary>
+            资源包生成器。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.BuildAssetBundle">
+            <summary>
+            生成资源包。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.AssetBundleTools.BuildAssetBundle.Run">
+            <summary>
+            运行生成资源包。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.Asset">
+            <summary>
+            资源。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundle">
+            <summary>
+            资源包。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundleCollection">
+            <summary>
+            资源包收集器。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundleLoadType">
+            <summary>
+            资源加载方式类型。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleLoadType.LoadFromFile">
+            <summary>
+            从文件加载。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleLoadType.LoadFromMemory">
+            <summary>
+            从内存加载。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleLoadType.LoadFromMemoryAndQuickDecrypt">
+            <summary>
+            从内存快速解密加载。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleLoadType.LoadFromMemoryAndDecrypt">
+            <summary>
+            从内存解密加载。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundleType">
+            <summary>
+            资源包类型。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleType.Unknown">
+            <summary>
+            未知。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleType.Asset">
+            <summary>
+            存放资源的资源包。
+            </summary>
+        </member>
+        <member name="F:UnityGameFramework.Editor.AssetBundleTools.AssetBundleType.Scene">
+            <summary>
+            存放场景的资源包。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.AssetBundleTools.AssetBundleEditor">
+            <summary>
+            资源包编辑器。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.GameFrameworkInspector">
+            <summary>
+            游戏框架 Inspector 抽象类。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.GameFrameworkInspector.OnInspectorGUI">
+            <summary>
+            绘制事件。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.GameFrameworkInspector.OnCompileStart">
+            <summary>
+            编译开始事件。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.GameFrameworkInspector.OnCompileComplete">
+            <summary>
+            编译完成事件。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.BuildSettings">
+            <summary>
+            构建配置相关的实用函数。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.BuildSettings.DefaultScenes">
+            <summary>
+            将构建场景设置为默认。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.BuildSettings.AllScenes">
+            <summary>
+            将构建场景设置为所有。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.ContextMenu">
+            <summary>
+            上下文相关的实用函数。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.Help">
+            <summary>
+            帮助相关的实用函数。
+            </summary>
+        </member>
+        <member name="T:UnityGameFramework.Editor.OpenFolder">
+            <summary>
+            打开文件夹相关的实用函数。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.OpenFolder.OpenFolderTemporaryCachePath">
+            <summary>
+            打开 Temporary Cache Path 文件夹。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.OpenFolder.OpenFolderPersistentDataPath">
+            <summary>
+            打开 Persistent Data Path 文件夹。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.OpenFolder.OpenFolderStreamingAssetsPath">
+            <summary>
+            打开 Streaming Assets Path 文件夹。
+            </summary>
+        </member>
+        <member name="M:UnityGameFramework.Editor.OpenFolder.OpenFolderDataPath">
+            <summary>
+            打开 Data Path 文件夹。
+            </summary>
+        </member>
+        <member name="T:Utility.Type">
+            <summary>
+            类型相关的实用函数。
+            </summary>
+        </member>
+        <member name="M:Utility.Type.GetTypeNames(System.Type)">
+            <summary>
+            获取指定基类的所有子类的名称。
+            </summary>
+            <param name="typeBase">基类类型。</param>
+            <returns>指定基类的所有子类的名称。</returns>
+        </member>
+    </members>
+</doc>

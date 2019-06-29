@@ -1,0 +1,81 @@
+#	新手引导表（强引导<=30级）													
+#	Id		Group	OpenType	Condition	Desc	ShowType	UIFormID	ClickObject	IsShade	IsStep	Direction	IsShowInGuide	DelayTime
+#	int		int	int	int	string	int	int	string	bool	bool	int	bool	float
+#	编号	策划备注	组	触发类型（1等级2功能开放3任务）	触发条件（等级，任务ID，功能ID）	引导描述(中间框)	引导类型（1点击，2提示框）	打开界面	按钮对象名字	遮罩（1有-1没有）	关键点	箭头方向（1左上，2上，3右上，4右，5右下，6下，7左下，8左）	新手期是否总显示（1是-1不是）	延迟显示时间
+	1	探险小姐姐文字描述	10001	3	10002	GUIDE_DESC_10001	2	100	null	TRUE	FALSE	-1	TRUE	0.5
+	2	点击探险	10001	3	10002	null	1	100	Btn Right List Grid/Instance Button	TRUE	FALSE	8	TRUE	0.5
+	3	点击第一个关卡	10001	3	10002	null	1	101	Instance Chapter Bg/Chapter 1/Chapter Item List 1/Chapter 1 Level 117 IntKey 0	TRUE	FALSE	7	TRUE	0.5
+	4	点击开战	10001	3	10002	null	1	102	Instance Bg/Btn List/Btn List Table/Next Btn	TRUE	TRUE	1	TRUE	0.5
+	5	点击探险	10002	3	10005	null	1	100	Btn Right List Grid/Instance Button	TRUE	FALSE	8	TRUE	0.5
+	6	探险2小姐姐文字描述	10002	3	10005	GUIDE_DESC_10002	2	101	null	TRUE	FALSE	-1	TRUE	0.5
+	7	点击第2个关卡	10002	3	10005	null	1	101	Instance Chapter Bg/Chapter 1/Chapter Item List 1/Chapter 1 Level 118 IntKey 1	TRUE	FALSE	7	TRUE	0.5
+	8	点击开战	10002	3	10005	null	1	102	Instance Bg/Btn List/Btn List Table/Next Btn	TRUE	TRUE	1	TRUE	0.5
+	9	点击英雄	10003	3	10010	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	TRUE	FALSE	1	TRUE	0.5
+	10	选择第一个英雄	10003	3	10010	null	1	105	All Heroes Bg/All Heroes List Border/Bg ScrollView/Card Table/HeroAlbumCard00	TRUE	FALSE	4	TRUE	0.5
+	11	点击装备	10003	3	10010	null	1	162	Right Bg/Page Btn List Bg/Gear Btn/Select Toggle/	TRUE	FALSE	8	TRUE	0.5
+	12	点击锻造	10003	3	10010	null	1	162	Right Bg/Page Btn List Bg/Gear Btn/Select Toggle/Btn/Hero Gear Bg/Equip Info Bg/Equip Upgrade Bg/Forge Btn	TRUE	TRUE	5	TRUE	0.5
+	13	锻造小姐姐文字描述	10003	3	10010	GUIDE_DESC_10003	2	162	null	TRUE	FALSE	-1	TRUE	0.5
+	14	点击返回	10003	3	10010	null	1	162	Title(Clone)/Title/Title Back Btn/	TRUE	FALSE	5	TRUE	0.5
+	15	在点击返回	10003	3	10010	null	1	105	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	16	点击英雄	10004	3	10016	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	TRUE	FALSE	1	TRUE	0.5
+	17	选择第一个英雄	10004	3	10016	null	1	105	All Heroes Bg/All Heroes List Border/Bg ScrollView/Card Table/HeroAlbumCard00	TRUE	FALSE	4	TRUE	0.5
+	18	点击强化	10004	3	10016	null	1	162	Right Bg/Page Btn List Bg/Forge Btn/Select Toggle	TRUE	FALSE	4	TRUE	0.5
+	19	点击第一个装备	10004	3	10016	null	1	162	Right Bg/Page Btn List Bg/Forge Btn/Select Toggle/Btn/Hero Strengthen Bg/Forge Bg/Forge Item Bg/Item Btn (3)	TRUE	TRUE	4	TRUE	0.5
+	20	点击装备	10004	3	10016	null	1	164	Item Info Bg/Item Info Bg Left/Inlay Btn	TRUE	FALSE	8	TRUE	0.5
+	21	点击第二个装备	10004	3	10016	null	1	162	Right Bg/Page Btn List Bg/Forge Btn/Select Toggle/Btn/Hero Strengthen Bg/Forge Bg/Forge Item Bg/Item Btn (4)	TRUE	FALSE	4	TRUE	0.5
+	22	点击装备	10004	3	10016	null	1	164	Item Info Bg/Item Info Bg Left/Inlay Btn	TRUE	FALSE	8	TRUE	0.5
+	23	点击第三个装备	10004	3	10016	null	1	162	Right Bg/Page Btn List Bg/Forge Btn/Select Toggle/Btn/Hero Strengthen Bg/Forge Bg/Forge Item Bg/Item Btn (5)	TRUE	FALSE	5	TRUE	0.5
+	24	点击装备	10004	3	10016	null	1	164	Item Info Bg/Item Info Bg Left/Inlay Btn	TRUE	FALSE	8	TRUE	0.5
+	25	点击突破	10004	3	10016	null	1	162	Right Bg/Page Btn List Bg/Forge Btn/Select Toggle/Btn/Hero Strengthen Bg/Forge Bg/Break Btn Border/Hero Btn	TRUE	FALSE	5	TRUE	0.5
+	26	升阶小姐姐文字描述	10004	3	10016	GUIDE_DESC_10004	2	162	null	TRUE	FALSE	-1	TRUE	0.5
+	27	点击返回	10004	3	10016	null	1	162	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	28	再点击返回	10004	3	10016	null	1	105	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	29	点击抽奖	10005	3	10021	null	1	100	Operation List Bg/Animation Bg/Btn Top List Grid/Chance Offset/Chance Button	TRUE	FALSE	5	TRUE	0.5
+	30	点击高级抽奖	10005	3	10021	null	1	124	Chance Bg/Panel/Diamond Chance Bg	TRUE	FALSE	7	TRUE	0.5
+	31	点击第一张牌	10005	3	10021	null	1	125	Chance Bg/Normal/Chance List Bg/Chances List Bg/Chances List Scroll View/Chances List Grid/ChanceDetailCardItem_Money(Clone)0	TRUE	TRUE	5	TRUE	0.5
+	32	点击返回	10005	3	10021	null	1	125	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	33	点击返回	10005	3	10021	null	1	124	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	34	抽奖小姐姐文字描述	10005	3	10021	GUIDE_DESC_10005	2	100	null	TRUE	FALSE	-1	TRUE	0.5
+	35	点击阵容	10006	3	10022	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Team Button	TRUE	FALSE	2	TRUE	0.5
+	36	点击第二个英雄上阵	10006	3	10022	null	1	103	Hero Card Bg/Card Scroll View/Card Table/HeroItem01	TRUE	TRUE	3	TRUE	0.5
+	37	上阵小姐姐文字描述	10006	3	10022	GUIDE_DESC_10006	2	103	null	TRUE	FALSE	-1	TRUE	0.5
+	38	点击返回	10006	3	10022	null	1	103	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	39	点击星图	10007	3	10026	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Meridian Button	TRUE	FALSE	2	TRUE	0.5
+	40	星图小姐姐说话	10007	3	10026	GUIDE_DESC_10007	2	115	null	TRUE	FALSE	-1	TRUE	0.5
+	41	点击激活	10007	3	10026	null	1	115	Meridian Bg/Rewards Bg/Activation Btn	TRUE	TRUE	1	TRUE	0.5
+	42	点击返回	10007	3	10026	null	1	115	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	43	点击好友	10008	3	10030	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Friends Button	TRUE	FALSE	2	TRUE	0.5
+	44	点击查找	10008	3	10030	null	1	120	Friend List Bg/Friend List Page Bg/Page Btn Table/Search And Recommendation Page Btn	TRUE	FALSE	3	TRUE	0.5
+	45	小姐姐又说话	10008	3	10030	GUIDE_DESC_10008	2	120	null	TRUE	FALSE	-1	TRUE	0.5
+	46	点击一键邀请	10008	3	10030	null	1	120	Friend List Bg/Friend List Border/Invitation/Look Up Btn List Bg/Invite Btn	TRUE	TRUE	1	TRUE	0.5
+	47	点击返回	10008	3	10030	null	1	120	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	50	点击金币加号	10010	3	10038	null	1	100	Porperty Bg/Gold Bg/Add Button	TRUE	FALSE	5	TRUE	0.5
+	51	点击购买	10010	3	10038	null	1	171	Box Reward Bg/Buy Btn	TRUE	TRUE	5	TRUE	0.5
+	52	点击体力加号	10011	3	10042	null	1	100	Porperty Bg/Energy Bg/Add Button	TRUE	FALSE	5	TRUE	0.5
+	53	点击购买	10011	3	10042	null	1	171	Box Reward Bg/Buy Btn	TRUE	TRUE	5	TRUE	0.5
+	60	点击活动	10013	3	10053	null	1	100	Btn Right List Grid/Activity Button	TRUE	FALSE	8	TRUE	0.5
+	61	点击排位赛	10013	3	10053	null	1	145	ActivitySelect/ActivitySelect Bg/ActivitySelect Scroll View/Activity Grid/5	TRUE	FALSE	3	TRUE	0.5
+	62	小姐姐说话	10013	3	10053	GUIDE_DESC_10012	2	134	null	TRUE	TRUE	-1	TRUE	0.5
+	63	点击英雄	10014	3	10060	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	TRUE	FALSE	2	TRUE	0.5
+	64	点击第一个英雄	10014	3	10060	null	1	105	All Heroes Bg/All Heroes List Border/Bg ScrollView/Card Table/HeroAlbumCard00	TRUE	FALSE	3	TRUE	0.5
+	65	点击装备	10014	3	10060	null	1	162	Right Bg/Page Btn List Bg/Gear Btn/Select Toggle	TRUE	FALSE	5	TRUE	0.5
+	66	点击精炼	10014	3	10060	null	1	162	Right Bg/Page Btn List Bg/Gear Btn/Select Toggle/Btn/Hero Gear Bg/Equip Info Bg/Equip Material List Bg/Refine Btn	TRUE	TRUE	5	TRUE	0.5
+	67	小姐姐说话	10014	3	10060	GUIDE_DESC_10013	2	162	null	TRUE	FALSE	-1	TRUE	0.5
+	68	点击返回	10014	3	10060	null	1	162	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	69	点击返回	10014	3	10060	null	1	105	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	70	点击活动	10015	3	10064	null	1	100	Btn Right List Grid/Activity Button	TRUE	FALSE	8	TRUE	0.5
+	71	点击历练	10015	3	10064	null	1	145	ActivitySelect/ActivitySelect Bg/ActivitySelect Scroll View/Activity Grid/7	TRUE	TRUE	5	TRUE	0.5
+	72	点击活动	10016	3	10067	null	1	100	Btn Right List Grid/Activity Button	TRUE	FALSE	8	TRUE	0.5
+	73	点击夺金	10016	3	10067	null	1	145	ActivitySelect/ActivitySelect Bg/ActivitySelect Scroll View/Activity Grid/6	TRUE	TRUE	5	TRUE	0.5
+	74	点击英雄	10017	3	10074	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	TRUE	FALSE	2	TRUE	0.5
+	75	选择可升星的英雄	10017	3	10074	null	1	105	All Heroes Bg/All Heroes List Border/Bg ScrollView/Card Table/HeroAlbumCard00	TRUE	FALSE	3	TRUE	0.5
+	76	点击升星	10017	3	10074	null	1	162	Right Bg/Page Btn List Bg/Level UP Btn/Select Toggle/Btn/Hero Level UP Bg/Achieve Bg/Upgrade Star Btn	TRUE	TRUE	5	TRUE	0.5
+	77	点击返回	10017	3	10074	null	1	162	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	78	点击返回	10017	3	10074	null	1	105	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	79	点击英雄	10018	3	10077	null	1	100	Btn Bottom List Bg/Main Btn List Bg/Btn Bottom List Grid/Hero Button	TRUE	FALSE	2	TRUE	0.5
+	80	点击第一个英雄	10018	3	10077	null	1	105	All Heroes Bg/All Heroes List Border/Bg ScrollView/Card Table/HeroAlbumCard00	TRUE	FALSE	3	TRUE	0.5
+	81	点击技能	10018	3	10077	null	1	162	Right Bg/Page Btn List Bg/Skill Btn/Select Toggle	TRUE	FALSE	1	TRUE	0.5
+	82	点击增强徽章	10018	3	10077	null	1	162	Right Bg/Page Btn List Bg/Skill Btn/Select Toggle/Btn/SkillDev/Hero Skill Bg/Skill Badge Bg/Skill Badge Grid/Skill Badge Common Bg/Skill Badge Btn	TRUE	FALSE	5	TRUE	0.5
+	83	选择徽章	10018	3	10077	null	1	162	SkillBadgeReplaceSubForm/Mask/Skill Badge Replace Bg/Skill Badge Replace Mask/Skill Badge Scroll View/Skill Badge Grid/SkillBadgeReplaceSubFormItem(Clone)0	TRUE	TRUE	5	TRUE	0.5
+	84	点击返回	10018	3	10077	null	1	162	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
+	85	点击返回	10018	3	10077	null	1	105	Title(Clone)/Title/Title Back Btn	TRUE	FALSE	5	TRUE	0.5
